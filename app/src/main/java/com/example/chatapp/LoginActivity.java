@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     String email, password;
     Button loginBtn;
     Toolbar toolbar;
+    Boolean isAdmin;
 
     FirebaseAuth firebaseAuth;
 
@@ -41,6 +42,10 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.login_account);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        // extract info regarding whether user is admin or not.
+        Bundle extras = getIntent().getExtras();
+        isAdmin = extras.getBoolean("isAdmin");
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +73,12 @@ public class LoginActivity extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     Toast.makeText(LoginActivity.this, "Logged in Successfully",
                             Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent;
+                    if (isAdmin) {
+                        intent = new Intent(LoginActivity.this, AdminStartActivity.class);
+                    } else {
+                        intent = new Intent(LoginActivity.this, StudentStartActivity.class);
+                    }
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
                     finish();

@@ -10,16 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheming">
         <activity
+            android:name=".BookDetailsModifyActivity"
+            android:exported="false"
+            android:parentActivityName=".ListBooksAdminActivity"/>
+        <activity
+            android:name=".ListBooksStudentIssueActivity"
+            android:exported="false"
+            android:parentActivityName=".StudentStartActivity" />
+        <activity
+            android:name=".StudentStartActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".CreateBookActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminStartActivity" />
+        <activity
+            android:name=".AdminStartActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ListBooksAdminActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminStartActivity" />
+        <activity
             android:name=".StartActivity"
             android:exported="false"
-            android:parentActivityName=".RootActivity"/>
+            android:parentActivityName=".RootActivity" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:parentActivityName=".StartActivity" />
-        <activity
-            android:name=".MessageActivity"
-            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false"
