@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheming">
         <activity
+            android:name=".BookDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".ListBooksStudentIssueActivity"/>
+        <activity
             android:name=".BookDetailsModifyActivity"
             android:exported="false"
-            android:parentActivityName=".ListBooksAdminActivity"/>
+            android:parentActivityName=".ListBooksAdminActivity" />
         <activity
             android:name=".ListBooksStudentIssueActivity"
             android:exported="false"

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.bumptech.glide.signature.ObjectKey;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -87,10 +89,13 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (user != null) {
                         HashMap<String, Object> hashMap = new HashMap<String, Object>();
+                        HashMap<String, Object> issuedBooks = new HashMap<>();
                         hashMap.put("username", username);
                         hashMap.put("email", email);
                         hashMap.put("password", password);
                         hashMap.put("isAdmin", isAdmin);
+                        issuedBooks.put("dummy", "dummy");
+                        hashMap.put("IssuedBooks", issuedBooks);
                         databaseReference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {

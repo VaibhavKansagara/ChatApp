@@ -43,8 +43,15 @@
         android:layout_below="@id/addBtn"
         android:id="@+id/viewBtn"/>
 
-
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/viewBtn"
+        android:id="@+id/logoutBtn"/>
 
 
 </RelativeLayout>

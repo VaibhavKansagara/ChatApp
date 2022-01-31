@@ -24,9 +24,21 @@ public class BookDao {
         return databaseReference.child(key).updateChildren(map);
     }
 
+    public Task<Void> subtractNoofCopies(String key, int noofcopies) {
+        return databaseReference.child(key).child("noofcopies")
+                .setValue(noofcopies - 1);
+    }
+
+    public Task<Void> addNoofCopies(String key, int noofcopies) {
+        return databaseReference.child(key).child("noofcopies")
+                .setValue(noofcopies + 1);
+    }
+
     public Task<Void> remove(String key) {
         return databaseReference.child(key).removeValue();
     }
+
+    public DatabaseReference get() { return databaseReference; }
 
     public Query getList() {
         return databaseReference.orderByKey();

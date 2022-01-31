@@ -5,6 +5,10 @@ public class Book {
     private int year, noofcopies;
     private double cost;
 
+    public Book() {
+
+    }
+
     public Book(String title,String author,int year, int noofcopies, String publisher,double cost)
     {   this.title=title;
         this.author=author;
