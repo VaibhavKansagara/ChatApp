@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".StudentStartActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:id="@+id/student"
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Issue"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/student"
+        android:id="@+id/issueBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Return"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/issueBtn"
+        android:id="@+id/returnBtn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/returnBtn"
+        android:id="@+id/logoutBtn"/>
+
+
+</RelativeLayout>
