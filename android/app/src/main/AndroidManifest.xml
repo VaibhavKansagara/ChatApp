@@ -14,6 +14,9 @@
         android:theme="@style/AppTheming"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".LoginAdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".CreateBookReactActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

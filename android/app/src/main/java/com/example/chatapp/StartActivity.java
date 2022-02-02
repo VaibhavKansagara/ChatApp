@@ -31,7 +31,12 @@ public class StartActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StartActivity.this, LoginActivity.class);
+                Intent intent;
+                if (isAdmin) {
+                    intent = new Intent(StartActivity.this, LoginAdminActivity.class);
+                } else {
+                    intent = new Intent(StartActivity.this, LoginActivity.class);
+                }
                 intent.putExtra("isAdmin", isAdmin);
                 startActivity(intent);
             }

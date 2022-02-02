@@ -73,9 +73,9 @@ public class RootActivity extends AppCompatActivity {
                     HashMap<String, Object> userDetails = (HashMap<String, Object>) task.getResult().getValue();
                     Boolean isAdmin = (Boolean) userDetails.get("isAdmin");
                     if (isAdmin) {
-                        Toast.makeText(RootActivity.this,
-                                "This is Admin", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RootActivity.this, AdminStartActivity.class));
+//                        Toast.makeText(RootActivity.this,
+//                                "This is Admin", Toast.LENGTH_SHORT).show();
+//                        startActivity(new Intent(RootActivity.this, AdminStartActivity.class));
                     } else {
                         Toast.makeText(RootActivity.this,
                                 "This is Student", Toast.LENGTH_SHORT).show();
