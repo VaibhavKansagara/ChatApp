@@ -99,8 +99,3 @@ var styles = StyleSheet.create({
     elevation:3
   }
 });
-
-AppRegistry.registerComponent(
-  'ReactAndroidApp',
-  () => HelloWorld
-);

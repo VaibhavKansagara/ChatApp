@@ -28,7 +28,7 @@ public class AdminStartActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminStartActivity.this, CreateBookActivity.class);
+                Intent intent = new Intent(AdminStartActivity.this, CreateBookReactActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
