@@ -212,6 +212,7 @@ public class BookDetailsActivity extends AppCompatActivity {
                                 text.setText(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
                             }
                         }, year, month, day);
+                picker.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
                 picker.show();
             }
         });

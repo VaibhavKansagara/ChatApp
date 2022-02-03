@@ -47,8 +47,6 @@ public class ListBooksAdminActivity extends AppCompatActivity {
                     book.put("key", dataSnapshot.getKey());
                     listViewAdapterAdmin.add(getBook(book));
                 }
-                Toast.makeText(ListBooksAdminActivity.this,
-                        String.valueOf(book_names.size()), Toast.LENGTH_SHORT).show();
             }
 
             @Override

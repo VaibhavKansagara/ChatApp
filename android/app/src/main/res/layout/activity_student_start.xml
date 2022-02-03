@@ -34,20 +34,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Return"
-        android:textColor="@android:color/white"
-        android:background="@android:color/holo_red_light"
-        android:layout_below="@id/issueBtn"
-        android:id="@+id/returnBtn"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:text="Logout"
         android:textColor="@android:color/white"
         android:background="@android:color/holo_red_light"
-        android:layout_below="@id/returnBtn"
+        android:layout_below="@id/issueBtn"
         android:id="@+id/logoutBtn"/>
 
 

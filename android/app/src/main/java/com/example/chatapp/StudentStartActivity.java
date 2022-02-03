@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class StudentStartActivity extends AppCompatActivity {
 
-    Button issueBtn, returnBtn, logoutBtn;
+    Button issueBtn, logoutBtn;
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -21,7 +21,6 @@ public class StudentStartActivity extends AppCompatActivity {
 
         // cast the views
         issueBtn = findViewById(R.id.issueBtn);
-        returnBtn = findViewById(R.id.returnBtn);
         logoutBtn = findViewById(R.id.logoutBtn);
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -33,13 +32,6 @@ public class StudentStartActivity extends AppCompatActivity {
                         ListBooksStudentIssueActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-            }
-        });
-
-        returnBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
             }
         });
 

@@ -106,7 +106,7 @@ public class BookDetailsModifyActivity extends AppCompatActivity {
         hashMap.put("author", author);
         hashMap.put("cost", cost);
         hashMap.put("year", year);
-        hashMap.put("nofofcopies", noofcopies);
+        hashMap.put("noofcopies", noofcopies);
 
         bookDao.update(key, hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

@@ -4,7 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_admin_start.xml" value="0.20643363728470113" />
+        <entry key="app/src/main/res/layout/activity_book_details.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_book_details_modify.xml" value="0.24456521739130435" />
         <entry key="app/src/main/res/layout/activity_create_book.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_list_admin.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_list_student_issue.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_root.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/activity_student_start.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/barlayout.xml" value="0.24456521739130435" />
+        <entry key="app/src/main/res/layout/list_rows_student_issue.xml" value="0.24456521739130435" />
       </map>
     </option>
   </component>

@@ -51,6 +51,7 @@ public class ListViewAdapterStudentIssue extends ArrayAdapter<Book> {
             issue.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    currBook = list.get(position);
                     Intent intent = new Intent(context, BookDetailsActivity.class);
                     putExtras(intent);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);

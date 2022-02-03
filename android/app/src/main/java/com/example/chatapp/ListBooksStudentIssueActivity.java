@@ -47,8 +47,6 @@ public class ListBooksStudentIssueActivity extends AppCompatActivity {
                     book.put("key", dataSnapshot.getKey());
                     listViewAdapterStudentIssue.add(getBook(book));
                 }
-                Toast.makeText(ListBooksStudentIssueActivity.this,
-                        String.valueOf(book_names.size()), Toast.LENGTH_SHORT).show();
             }
 
             @Override

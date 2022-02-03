@@ -52,6 +52,7 @@ public class ListViewAdapterAdmin extends ArrayAdapter<Book> {
             modify.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    currBook = list.get(position);
                     // Re-route to individual book page and pass current book details to new activity
                     Intent intent = new Intent(context, BookDetailsModifyActivity.class);
                     putExtras(intent);
